@@ -8,5 +8,49 @@
 <body>
   <h1>What Programming Language is Right for You?</h1>
   <h3>Take this short quiz to learn more about which language you might want to learn.</h3>
-  
+  <p>Fill in the form below, selecting between the options where indicated, to find out what programming language might be of interest to you.</p>
+  <br>
+  <form id="userInfo">
+    <p id="error-message" class="hidden">Please fill out the form completely in order to receive your result!</p>
+    <label for="name">First Name</label>
+    <input id="name" type="text">
+    <br>
+    <label for="firstCompAge">At what age (in years) do you remember first using a computer?</label>
+    <input id="age" type="text">
+    <br>
+    <p>How much experience do you have with <em>any</em> programming language (for example: HTML, C#, Ruby, JavaScript, etc.)? If none, that's OK -- there's a programming language out there for you!</p>
+    <form id="radio-form">
+      <label>
+        <input type="radio" name="Experience" value="noExperience" checked>
+        No experience
+      </label><br>
+      <label>
+        <input type="radio" name="Experience" id="lessThanOne">
+        Less than one year
+      </label><br>
+      <label>
+        <input type="radio" name="Experience" id="oneToTwo">
+        One to less than two years
+      </label><br>
+      <label>
+        <input type="radio" name="Experience" id="moreThanTwo">
+        Two years or more
+      </label>
+      <br>
+      <br>
+      </form>
+      <form>
+        <label for="looks">On a scale of 1 to 3, with 1 meaning "completely unimportant" and 3 meaning "absolutely essential", how much does the aesthetic (i.e., the "look") of your work matter to you?</label>
+        <input id="looks" type="number">
+  </form>
+
+
+    </label>
+
+
+
+
+
+
+
 </body>
