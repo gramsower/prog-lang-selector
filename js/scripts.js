@@ -20,8 +20,8 @@ window.onload = function() {
     const radioSelection = document.querySelector("input[name='experience']:checked").value;
     const looks = parseInt(document.querySelector("input#looks").value;
   
-  if (radioSelection && looks) {
-    document.getElementById("
+  if (radioSelection === ') {
+    document.getElementById("radio-form")addEventListener("submit", handleRadio
 
 
 
