@@ -11,23 +11,34 @@ function hideResultsAndError() {
 }
 
 window.onload = function() {
-  hideResultsAndError();
-  document.getElementById("
-
-  function handleRadio(event) {
+  document.querySelector("form").onsubmit = function(event) {
     event.preventDefault();
     hideResultsAndError();
-    const radioSelection = document.querySelector("input[name='experience']:checked").value;
-    const looks = parseInt(document.querySelector("input#looks").value;
-  
-  if (radioSelection === ') {
-    document.getElementById("radio-form")addEventListener("submit", handleRadio
+    const userName = document.querySelector("input#userName").value;
+    const firstCompAge = document.querySelector("input#firstCompAge");
+    const userExp = parseInt(document.querySelector("input#experience").value);
+    const looks = parseInt(document.querySelector("input#looks").value);
 
-
-
-
-  } else {
-    document.getElementById("error-message").remove.Attribute("class");
-    }
+    if (userName && firstCompAge && userExp && looks) {
+      if (userExp  <=1) {
+        if (looks === 1) {
+          document.getElementById("C#").removeAttribute("class");
+        } else if (looks === 2) {
+          document.getElementById("Java").removeAttribute("class");
+        } else {
+          document.getElementById("HTML").removeAttribute("class");
+        }
+      } else if {
+        if (looks === 1) {
+          document.getElementById("PHP").removeAttribute("class");
+        } else if (looks === 2) {
+          document.getElementById("React").removeAttribute("class");
+        } else {
+          document.getElementById("JavaScript").removeAttribute("class");
+        } 
+      } else {
+        document.getElementById("error-message").removeAttribute("class");
+      }
+    };
   };
-}
+};

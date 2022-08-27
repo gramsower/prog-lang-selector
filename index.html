@@ -13,14 +13,14 @@
 
     <form id="userInfo">
       <p id="error-message" class="hidden">Please fill out the form completely in order to receive your result!</p>
-      <label for="name">First Name</label>
-      <input id="name" type="text"><br>
+      <label for="userName">First Name</label>
+      <input id="userName" type="text"><br>
       <label for="firstCompAge">At what age (in years) do you remember first using a computer?</label>
       <input id="age" type="text"><br>
       <p>How much experience do you have with <em>any</em> programming language (for example: HTML, C#, Ruby, JavaScript, etc.)? If none, that's OK -- there's a programming language out there for you!</p>
 
- <!-- I started to use radio buttons so the user could select a specific amount of experience, but in the JS logic, I realized that a simpler (better for our purposes) approach is to simply allow the user to input their experience in whole numbers and proceed with logic from there.
-   
+ <!-- I started out using radio buttons so the user could select a specific amount of experience, but in drafting my JS code, I realized that a simpler (better for our purposes) approach is to simply allow the user to input their experience in whole numbers and proceed with the if/then logic from there. (However, I wanted to show my work with radio buttons--obviously this type of code would not remain in a finished product.)
+
      <form id="radio-form">
         <label>
           <input type="radio" id ="experience1" name="experience" value="noExperience" checked>
@@ -40,10 +40,11 @@
         </label><br><br>
       </form> -->
 
-      <form>
-        <label 
-      </form>
-      <form>
+      <form id="userExperience">
+        <label for="experience">How many years, in whole numbers, do you have? (If none, enter '0'.)</label>
+        <input id="experience" type="number">
+      </form><br>
+      <form id="uIntImportance">
         <label for="looks">On a scale of 1 to 3, with 1 meaning "completely unimportant" and 3 meaning "absolutely essential", how much does the aesthetic (i.e., the "look") of your work matter to you?</label>
         <input id="looks" type="number">
       </form>
@@ -64,7 +65,7 @@
 
   <div id="HTML" class="hidden">
     <h1>You should learn <em>HTML</em>!</h1>
-    <p>You don't have much, if any, experience with programming languages, but you can navigate the web-- or you wouldn't be here, taking this quiz. Data analysis? For the birds! You're more interested in presenting the data in a way that is visually appealing, interactive, and sophisticated. HTML is just the ticket--although it's only the first step on your journey into a larger world.</p>
+    <p>You don't have much, if any, experience with programming languages, but you can navigate the web-- or you wouldn't be here, taking this quiz. Data analysis? For the birds! You're more interested in presenting the data (and any analysis) in a way that is visually appealing, interactive, and sophisticated. HTML is just the ticket--although it's only the first step on your journey into a larger world.</p>
   </div>
 
   <div id="PHP" class="hidden">
