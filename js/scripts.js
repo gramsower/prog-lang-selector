@@ -21,8 +21,8 @@ window.onload = function() {
     const userExp = parseInt(document.querySelector("input#experience").value);
     const looks = parseInt(document.querySelector("input#looks").value);
 
-    if (userName && age && looks) {
-      if (userExp <= 1) {
+    if (userName && firstCompAge && looks) {
+      if (userExp <= 1 ) {
         if (looks === 1) {
           document.getElementById("C#").removeAttribute("class");
         } else if (looks === 2) {

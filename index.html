@@ -6,15 +6,18 @@
     <title>Programming Language Selector</title>
   </head>
   <body>
-    <div>
-      <h1 id="title">What Programming Language is Right for You?</h1>
-      <h3 id="subtitle">Take this short quiz to learn more about which language you might want to learn.</h3>
-      <p id="instructions">Fill in the form below, selecting between the options where indicated, to find out what programming language might be of interest to you.</p><br>
+    <div class = "page">
+      <div class="box1">
+        <h1 id="title">What Programming Language is Right for You?</h1>
+        <h3 id="subtitle">Take this short quiz to learn more about which language you might want to learn.</h3>
+        <p id="instructions">Fill in the form below, selecting between the options where indicated, to find out what programming language might be of interest to you.</p>
+      </div>
 
       <form id="userInfo">
         <p id="error-message" class="hidden">Please fill out the form completely in order to receive your result!</p>
-        <label for="userName">First Name</label>
-        <input id="userName" type="text"><br>
+        <br>
+        <label for="userName"><strong>First Name</strong></label>
+        <input id="userName" type="text"><br><br>
         <label for="age">At what age (in years) do you remember first using a computer?</label>
         <input id="age" type="number"><br>
         <p>How much experience do you have with <em>any</em> programming language (for example: HTML, C#, Ruby, JavaScript, etc.)? If none, that's OK -- there's a programming language out there for you!</p>
@@ -40,16 +43,19 @@
           </label><br><br>
         </form> -->
 
-        <label for="experience">How many years, in whole numbers, do you have? (If none, leave this field blank.)</label>
+        <label for="experience">How many years, in whole numbers, do you have? (If none, enter 0.)</label>
         <input id="experience" type="number">
+        <br>
         <br>
         <label for="looks">On a scale of 1 to 3, with 1 meaning "completely unimportant" and 3 meaning "absolutely essential", how much does the aesthetic (i.e., the "look") of your work matter to you?</label>
         <input id="looks" type="number">
         <br><br>
         <button type="submit">What language should you learn?</button>
+        <br><br>
+        <button type="button" id="reset">Reset!</button>
       </form>
     </div>
-
+    
     <div id="C#" class="hidden">
       <h1>You should learn <em>C#</em>!</h1>
       <p>You don't have much, if any, experience with programming languages, and (if we're being honest) those "frilly" design elements don't interest you much. C# might be a good match for you! C# is a general-purpose programming language very popular amongst those newer to programming. It is one of the most popular languages in the world. The skills you will learn as you begin to understand and work with C# will serve you well as you move on to other languages.</p>
@@ -79,5 +85,6 @@
       <h1>You should learn <em>JavaScript</em>!</h1>
       <p>Ok, you're not at total n00b; you might have some basic experience with Python, HTML, or maybe even C# or React.  JavaScript is a powerful, advanced and highly-desirable language skill to pick up.  You can use it in a multitude of settings, and it can easily integrate with other languages to help it look its shiny best--and since looks are just as (maybe more?) important as functionality for you, Javascript could be a good match.</p>
     </div>
+  </div>
   </body>
 </html>
