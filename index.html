@@ -1,85 +1,83 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <script src="js/scripts.js"></script>
-  <title>Programming Language Selector</title>
-</head>
-<body>
-  <div>
-    <h1 id="title">What Programming Language is Right for You?</h1>
-    <h3 id="subtitle">Take this short quiz to learn more about which language you might want to learn.</h3>
-    <p id="instructions">Fill in the form below, selecting between the options where indicated, to find out what programming language might be of interest to you.</p><br>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/scripts.js"></script>
+    <title>Programming Language Selector</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">What Programming Language is Right for You?</h1>
+      <h3 id="subtitle">Take this short quiz to learn more about which language you might want to learn.</h3>
+      <p id="instructions">Fill in the form below, selecting between the options where indicated, to find out what programming language might be of interest to you.</p><br>
 
-    <form id="userInfo">
-      <p id="error-message" class="hidden">Please fill out the form completely in order to receive your result!</p>
-      <label for="userName">First Name</label>
-      <input id="userName" type="text"><br>
-      <label for="firstCompAge">At what age (in years) do you remember first using a computer?</label>
-      <input id="age" type="text"><br>
-      <p>How much experience do you have with <em>any</em> programming language (for example: HTML, C#, Ruby, JavaScript, etc.)? If none, that's OK -- there's a programming language out there for you!</p>
+      <form id="userInfo">
+        <p id="error-message" class="hidden">Please fill out the form completely in order to receive your result!</p>
+        <label for="userName">First Name</label>
+        <input id="userName" type="text"><br>
+        <label for="age">At what age (in years) do you remember first using a computer?</label>
+        <input id="age" type="number"><br>
+        <p>How much experience do you have with <em>any</em> programming language (for example: HTML, C#, Ruby, JavaScript, etc.)? If none, that's OK -- there's a programming language out there for you!</p>
 
- <!-- I started out using radio buttons so the user could select a specific amount of experience, but in drafting my JS code, I realized that a simpler (better for our purposes) approach is to simply allow the user to input their experience in whole numbers and proceed with the if/then logic from there. (However, I wanted to show my work with radio buttons--obviously this type of code would not remain in a finished product.)
+  <!-- I started out using radio buttons so the user could select a specific amount of experience, but in drafting my JS code, I realized that a simpler (better for our purposes) approach is to simply allow the user to input their experience in whole numbers and proceed with the if/then logic from there. (However, I wanted to show my work with radio buttons--obviously this type of code would not remain in a finished product.)
 
-     <form id="radio-form">
-        <label>
-          <input type="radio" id ="experience1" name="experience" value="noExperience" checked>
-          No experience
-        </label><br>
-        <label>
-          <input type="radio" id="experience2" name="experience" value="lessThanOne">
-          Less than one year
-        </label><br>
-        <label>
-          <input type="radio" id="experience3" name="experience" value="oneToTwo">
-          One to less than two years
-        </label><br>
-        <label>
-          <input type="radio" id="experience4" name="experience" value="moreThanTwo">
-          Two years or more
-        </label><br><br>
-      </form> -->
+      <form id="radio-form">
+          <label>
+            <input type="radio" id ="experience1" name="experience" value="noExperience" checked>
+            No experience
+          </label><br>
+          <label>
+            <input type="radio" id="experience2" name="experience" value="lessThanOne">
+            Less than one year
+          </label><br>
+          <label>
+            <input type="radio" id="experience3" name="experience" value="oneToTwo">
+            One to less than two years
+          </label><br>
+          <label>
+            <input type="radio" id="experience4" name="experience" value="moreThanTwo">
+            Two years or more
+          </label><br><br>
+        </form> -->
 
-      <form id="userExperience">
-        <label for="experience">How many years, in whole numbers, do you have? (If none, enter '0'.)</label>
+        <label for="experience">How many years, in whole numbers, do you have? (If none, leave this field blank.)</label>
         <input id="experience" type="number">
-      </form><br>
-      <form id="uIntImportance">
+        <br>
         <label for="looks">On a scale of 1 to 3, with 1 meaning "completely unimportant" and 3 meaning "absolutely essential", how much does the aesthetic (i.e., the "look") of your work matter to you?</label>
         <input id="looks" type="number">
+        <br><br>
+        <button type="submit">What language should you learn?</button>
       </form>
-      <br>
-      <button type="submit">What language should you learn?</button>
-    </form>
-  </div>
+    </div>
 
-  <div id="C#" class="hidden">
-    <h1>You should learn <em>C#</em>!</h1>
-    <p>You don't have much, if any, experience with programming languages, and (if we're being honest) those "frilly" design elements don't interest you much. C# might be a good match for you! C# is a general-purpose programming language very popular amongst those newer to programming. It is one of the most popular languages in the world. The skills you will learn as you begin to understand and work with C# will serve you well as you move on to other languages.</p>
-  </div>
+    <div id="C#" class="hidden">
+      <h1>You should learn <em>C#</em>!</h1>
+      <p>You don't have much, if any, experience with programming languages, and (if we're being honest) those "frilly" design elements don't interest you much. C# might be a good match for you! C# is a general-purpose programming language very popular amongst those newer to programming. It is one of the most popular languages in the world. The skills you will learn as you begin to understand and work with C# will serve you well as you move on to other languages.</p>
+    </div>
 
-  <div id="Java" class="hidden">
-    <h1>You should learn <em>Java</em>!</h1>
-    <p>You don't have much, if any, experience with programming languages, and while the look and feel of your work is important, you'd rather focus on learning a language with powerful functionality. Java (<em>not</em> to confused with JavaScript!) might be a good match for you! Java is one of the most "OG" languages around (read: it's old!), and both its wide implementation and highly adaptable nature make it a popular and sought-after skillset.</p>
-  </div>
+    <div id="Java" class="hidden">
+      <h1>You should learn <em>Java</em>!</h1>
+      <p>You don't have much, if any, experience with programming languages, and while the look and feel of your work is important, you'd rather focus on learning a language with powerful functionality. Java (<em>not</em> to confused with JavaScript!) might be a good match for you! Java is one of the most "OG" languages around (read: it's old!), and both its wide implementation and highly adaptable nature make it a popular and sought-after skillset.</p>
+    </div>
 
-  <div id="HTML" class="hidden">
-    <h1>You should learn <em>HTML</em>!</h1>
-    <p>You don't have much, if any, experience with programming languages, but you can navigate the web-- or you wouldn't be here, taking this quiz. Data analysis? For the birds! You're more interested in presenting the data (and any analysis) in a way that is visually appealing, interactive, and sophisticated. HTML is just the ticket--although it's only the first step on your journey into a larger world.</p>
-  </div>
+    <div id="HTML" class="hidden">
+      <h1>You should learn <em>HTML</em>!</h1>
+      <p>You don't have much, if any, experience with programming languages, but you can navigate the web-- or you wouldn't be here, taking this quiz. Data analysis? For the birds! You're more interested in presenting the data (and any analysis) in a way that is visually appealing, interactive, and sophisticated. HTML is just the ticket--although it's only the first step on your journey into a larger world.</p>
+    </div>
 
-  <div id="PHP" class="hidden">
-    <h1>You should learn <em>PHP</em>!</h1>
-    <p>Ok, you're not at total n00b; you might have some basic experience with python, HTML, or maybe even Javascript or C#.  You know enough to know that you'd rather spend your time organizing and analyzing data than spend time on how it's presented to the user. (A programmer for other programmers, if you will.) If you're looking for a Popular, Heavy-hitting, and Practical (see what I did there?) language with a high level of support, PHP may be just the ticket.</p>
-  </div>
+    <div id="PHP" class="hidden">
+      <h1>You should learn <em>PHP</em>!</h1>
+      <p>Ok, you're not at total n00b; you might have some basic experience with python, HTML, or maybe even Javascript or C#.  You know enough to know that you'd rather spend your time organizing and analyzing data than spend time on how it's presented to the user. (A programmer for other programmers, if you will.) If you're looking for a Popular, Heavy-hitting, and Practical (see what I did there?) language with a high level of support, PHP may be just the ticket.</p>
+    </div>
 
-  <div id="React" class="hidden">
-    <h1>You should learn <em>React</em>!</h1>
-    <p>Ok, you're not at total n00b; you might have some basic experience with Python, HTML, or maybe even Javascript or C#. React can build on those skills, and since it's popular (especially with the Facebook dev set) you will find fluency in React is a hot commodity.</p>
-  </div>
+    <div id="React" class="hidden">
+      <h1>You should learn <em>React</em>!</h1>
+      <p>Ok, you're not at total n00b; you might have some basic experience with Python, HTML, or maybe even Javascript or C#. React can build on those skills, and since it's popular (especially with the Facebook dev set) you will find fluency in React is a hot commodity.</p>
+    </div>
 
-  <div id="JavaScript" class="hidden">
-    <h1>You should learn <em>JavaScript</em>!</h1>
-    <p>Ok, you're not at total n00b; you might have some basic experience with Python, HTML, or maybe even C# or React.  JavaScript is a powerful, advanced and highly-desirable language skill to pick up.  You can use it in a multitude of settings, and it can easily integrate with other languages to help it look its shiny best--and since looks are just as (maybe more?) important as functionality for you, Javascript could be a good match.</p>
-  </div>
-</body>
+    <div id="JavaScript" class="hidden">
+      <h1>You should learn <em>JavaScript</em>!</h1>
+      <p>Ok, you're not at total n00b; you might have some basic experience with Python, HTML, or maybe even C# or React.  JavaScript is a powerful, advanced and highly-desirable language skill to pick up.  You can use it in a multitude of settings, and it can easily integrate with other languages to help it look its shiny best--and since looks are just as (maybe more?) important as functionality for you, Javascript could be a good match.</p>
+    </div>
+  </body>
+</html>
