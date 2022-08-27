@@ -6,51 +6,69 @@
   <title>Programming Language Selector</title>
 </head>
 <body>
-  <h1>What Programming Language is Right for You?</h1>
-  <h3>Take this short quiz to learn more about which language you might want to learn.</h3>
-  <p>Fill in the form below, selecting between the options where indicated, to find out what programming language might be of interest to you.</p>
-  <br>
-  <form id="userInfo">
-    <p id="error-message" class="hidden">Please fill out the form completely in order to receive your result!</p>
-    <label for="name">First Name</label>
-    <input id="name" type="text">
-    <br>
-    <label for="firstCompAge">At what age (in years) do you remember first using a computer?</label>
-    <input id="age" type="text">
-    <br>
-    <p>How much experience do you have with <em>any</em> programming language (for example: HTML, C#, Ruby, JavaScript, etc.)? If none, that's OK -- there's a programming language out there for you!</p>
-    <form id="radio-form">
-      <label>
-        <input type="radio" name="Experience" value="noExperience" checked>
-        No experience
-      </label><br>
-      <label>
-        <input type="radio" name="Experience" id="lessThanOne">
-        Less than one year
-      </label><br>
-      <label>
-        <input type="radio" name="Experience" id="oneToTwo">
-        One to less than two years
-      </label><br>
-      <label>
-        <input type="radio" name="Experience" id="moreThanTwo">
-        Two years or more
-      </label>
-      <br>
-      <br>
+  <div>
+    <h1 id="title">What Programming Language is Right for You?</h1>
+    <h3 id="subtitle">Take this short quiz to learn more about which language you might want to learn.</h3>
+    <p id="instructions">Fill in the form below, selecting between the options where indicated, to find out what programming language might be of interest to you.</p><br>
+
+    <form id="userInfo">
+      <p id="error-message" class="hidden">Please fill out the form completely in order to receive your result!</p>
+      <label for="name">First Name</label>
+      <input id="name" type="text"><br>
+      <label for="firstCompAge">At what age (in years) do you remember first using a computer?</label>
+      <input id="age" type="text"><br>
+      <p>How much experience do you have with <em>any</em> programming language (for example: HTML, C#, Ruby, JavaScript, etc.)? If none, that's OK -- there's a programming language out there for you!</p>
+
+      <form id="radio-form">
+        <label>
+          <input type="radio" name="Experience" value="noExperience" checked>
+          No experience
+        </label><br>
+        <label>
+          <input type="radio" name="Experience" id="lessThanOne">
+          Less than one year
+        </label><br>
+        <label>
+          <input type="radio" name="Experience" id="oneToTwo">
+          One to less than two years
+        </label><br>
+        <label>
+          <input type="radio" name="Experience" id="moreThanTwo">
+          Two years or more
+        </label><br><br>
       </form>
       <form>
         <label for="looks">On a scale of 1 to 3, with 1 meaning "completely unimportant" and 3 meaning "absolutely essential", how much does the aesthetic (i.e., the "look") of your work matter to you?</label>
         <input id="looks" type="number">
-  </form>
+      </form>
+      <br>
+      <button type="submit">What language should you learn?</button>
+    </form>
+  </div>
 
+  <div id="C#" class="hidden">
+    <h1>You should learn <em>C#</em>!</h1>
+    <p>You don't have much, if any, experience with programming languages, and (if we're being honest) those "frilly" design elements don't interest you much. C# might be a good match for you! C# is a general-purpose programming language very popular amongst those newer to programming. It is one of the most popular languages in the world. The skills you will learn as you begin to understand and work with C# will serve you well as you move on to other languages.</p>
+  </div>
 
-    </label>
+  <div id="Java" class="hidden">
+    <h1>You should learn <em>Java</em>!</h1>
+    <p>You don't have much, if any, experience with programming languages, and while the look and feel of your work is important, you'd rather focus on learning a language with powerful functionality. Java might be a good match for you! Java is one of the most "OG" languages around (read: it's old!), and both its wide implementation and highly adaptable nature make it a popular and sought-after skillset.</p>
+  </div>
 
+  <div id="HTML" class="hidden">
+    <h1>You should learn <em>HTML</em>!</h1>
+    <p>You don't have much, if any, experience with programming languages, but you can navigate the web-- or you wouldn't be here, taking this quiz. Data analysis? For the birds! You're more interested in presenting the data in a way that is visually appealing, interactive, and sophisticated. HTML is just the ticket--although it's only the first step on your journey into a larger world.</p>
+  </div>
 
+  <div id="PHP" class="hidden">
+    <h1>You should learn <em>PHP</em>!</h1>
+    <p>Ok, you're not at total n00b; you might have some basic experience with python, HTML, or maybe even Javascript or C#.  If you're looking for a Popular, Heavy-hitting, and Practical (see what I did there?) language with a high level of support, PHP may be just the ticket.</p>
+  </div>
 
-
-
-
+  <div id="PHP" class="hidden">
+    <h1>You should learn <em>PHP</em>!</h1>
+    <p>Ok, you're not at total n00b; you might have some basic experience with python, HTML, or maybe even Javascript or C#.  If you're looking for a Popular, Heavy-hitting, and Practical (see what I did there?) language with a high level of support, PHP may be just the ticket.</p>
+  </div>
 
 </body>
