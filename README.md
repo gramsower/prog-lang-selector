@@ -2,7 +2,7 @@
 
 #### By Greg Ramsower
 
-#### A Simple Website allowing users to input specified parameters, with a return of one of six possible coding optinos.
+#### A simple website allowing users to input specified parameters, with a return of one of six possible coding optinos.
 
 ## Technologies Used
 
